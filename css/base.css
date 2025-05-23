@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Sigmar&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #181818 !important;
+}
+
+ul,
+ol {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+textarea {
+  overflow: auto;
+}
+
+mark {
+  padding: 0 !important;
+  color: #000;
+  background-color: yellow !important;
+}
+figure {
+  margin: 0 !important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  outline: none;
+  border: 1px solid #414345;
+  background-color: #414345;
+  color: #fff;
+  padding: 8px 8px 8px 15px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: gray;
+}
+
+.maincontainer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .maincontainer {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  .maincontainer {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .maincontainer {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: 576px) {
+  .maincontainer {
+    max-width: 400px;
+  }
+}
+@media (max-width: 420px) {
+  .maincontainer {
+    max-width: 350px;
+  }
+}

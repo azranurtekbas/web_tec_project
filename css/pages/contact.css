@@ -1,0 +1,236 @@
+.form-elements-test-area {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.formmain {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #181818;
+  padding: 30px 40px;
+  transition: visibility 0.2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+.formmain.active {
+  visibility: hidden;
+}
+.formmain .formmain-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  column-gap: 20px;
+}
+
+.formmain .formmain-item span {
+  color: #fff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  flex-basis: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.formmain-item select {
+  flex-basis: calc(100% - 105px);
+  outline: 0 !important;
+}
+.comment textarea {
+  width: 100%;
+  min-height: 100px;
+  height: 100%;
+}
+
+.form-elements-test-area .form-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.form-buttons .form-button {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #232526;
+  border: none;
+  padding: 15px 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.form-button:nth-child(1)::after {
+  width: 50%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  content: "";
+  bottom: 9px;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.form-button:nth-child(1):hover::after {
+  opacity: 1;
+}
+
+.form-button:nth-child(2)::after {
+  width: 50%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  content: "";
+  bottom: 9px;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.form-button:nth-child(2):hover::after {
+  opacity: 1;
+}
+.formmain-item.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.formmain-item.comment span {
+  flex-basis: 0;
+  margin-bottom: 10px;
+}
+.formmain-item input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.formmain-item input[type="radio"]:checked {
+  background-color: #414345;
+}
+.formmain-item {
+  position: relative;
+}
+
+.form-name.active::after {
+  content: "İsim Kısmı Boş Bırakılamaz";
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  font-size: 10px;
+  color: red;
+}
+.form-surname.active::after {
+  content: "Soyisim Kısmı Boş Bırakılamaz";
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  font-size: 10px;
+  color: red;
+}
+.form-mail.active::after {
+  content: "Mail Kısmı Boş Bırakılamaz";
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  font-size: 10px;
+  color: red;
+}
+.form-mail.active2::after {
+  content: "Mail Adresi @ İçermelidir";
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  font-size: 10px;
+  color: red;
+}
+.form-age.active::after {
+  content: "Yaş Kısmı Boş Bırakılamaz";
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  font-size: 10px;
+  color: red;
+}
+.form-gender.active::after {
+  content: "Cinsiyet Kısmı Boş Bırakılamaz";
+  position: absolute;
+  bottom: -15px;
+  right: 5px;
+  font-size: 10px;
+  color: red;
+}
+.form-mesage.active::after {
+  content: "Mesaj Kısmı Boş Bırakılamaz";
+  position: absolute;
+  bottom: -15px;
+  right: 5px;
+  font-size: 10px;
+  color: red;
+}
+.on-off-button {
+  position: absolute;
+  top: 120px;
+  right: 40px;
+  z-index: 2;
+}
+.on-off-button input {
+  visibility: hidden;
+  position: absolute;
+}
+.on-off-button input:checked ~ .check::before {
+  transform: translateX(38px);
+}
+.on-off-button .check {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #414345;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.check::before {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 8px;
+  content: "";
+  transition: all 0.2s ease-in;
+}
+
+@media (max-width: 768px) {
+  .formmain {
+    row-gap: 10px;
+    padding: 20px 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .formmain .formmain-item {
+    font-size: 14px;
+  }
+  .comment textarea {
+    min-height: 0px !important;
+    max-height: 80px !important;
+  }
+  .formmain-item select {
+    flex-basis: calc(100% - 120px);
+  }
+}
+@media (max-width: 420px) {
+  .on-off-button {
+    top: 80px;
+    right: 5px;
+  }
+}
