@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Ben Huseyin</title>
+    <title>Ben Azra</title>
   </head>
   <body>
     <section class="overflow">
@@ -21,7 +21,7 @@
         <div class="header-wrapper">
           <a href="index.html">
             Ben <br />
-            Huseyin
+            Azra
           </a>
         </div>
       </div>

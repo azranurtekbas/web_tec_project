@@ -1,9 +1,9 @@
 async function showData() {
   let response = await fetch(
-    "https://api.nasa.gov/planetary/apod?api_key=mJkN2FrHOPUiiTwlkTwFGVVSBcHuYhwC30gkPG1D",
+     "https://api.nasa.gov/planetary/apod?api_key=pJgPKBhVt7SyEuqQgDSCTBpofez8oqZgXx2idtvX",
     {
       method: "GET",
-      url: "https://api.nasa.gov/planetary/apod?api_key=mJkN2FrHOPUiiTwlkTwFGVVSBcHuYhwC30gkPG1D",
+      url:  "https://api.nasa.gov/planetary/apod?api_key=pJgPKBhVt7SyEuqQgDSCTBpofez8oqZgXx2idtvX",
     }
   );
   var data = await response.json();

@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Ben Huseyin</title>
+    <title>Ben Azra</title>
   </head>
   <body>
     <section class="overflow">
@@ -21,7 +21,7 @@
         <div class="header-wrapper">
           <a href="index.html">
             Ben <br />
-            Huseyin
+            Azra
           </a>
         </div>
       </div>
@@ -39,7 +39,7 @@
 
                         <?php 
 				                     include("userdata.php");
-                            if (($_POST["email"] == "g211210041@sakarya.edu.tr" || $_POST["email"] == $email) and ($_POST["password"] == "g211210041" || $_POST["password"] == $password))
+                            if (($_POST["email"] == "g221210056@sakarya.edu.tr" || $_POST["email"] == $email) and ($_POST["password"] == "g211210056" || $_POST["password"] == $password))
                             {
                                 $_SESSION["email"] = $email;
                                 echo ' <h3 class="postLogin-tittle">Giriş Başarılı </h3>   ';  
@@ -50,7 +50,7 @@
                             else 
                             {
                               echo ' <h3 class="postLogin-tittle">Giriş Başarısız</h3>   ';   
-                              echo '<h4 class="postLogin-mini-tittle>Hoş Geldiniz "G211210041"</h4> '; 
+                              echo '<h4 class="postLogin-mini-tittle>Hoş Geldiniz "G211210056"</h4> '; 
                               echo '<p>3 Saniye İçinde Giriş Sayfasına Yönlendirileceksiniz </p>';    
                               header("Refresh: 3; url=login.php");
                             }
